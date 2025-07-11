@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 int countVowels(String input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+  final vowels = RegExp(r'[aeiouAEIOU]');
+  return input.split('').where((char) => vowels.hasMatch(char)).length;
 }
 
 class S3384 extends StatefulWidget {
